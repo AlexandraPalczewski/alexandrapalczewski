@@ -1,0 +1,133 @@
+#contact {
+	content: url("../images/contact-mobile.png");
+}
+
+.header-text {
+	font-family: 'Lora', serif;
+	font-size: 25px;
+	color: #FF5A5A;
+}
+
+p, li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+}
+
+.caption {
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+	color: #919191;
+}
+
+.bro {
+	position: absolute;
+	left: 93%;
+	top: 45%;
+	transform: translate(-93%, -45%);
+	color: #FF5A5A;
+}
+
+/*Margins for mobile*/
+
+.container {
+	max-width: 90%;
+}
+
+.hero-margin {
+	margin-bottom: 40px;
+}
+
+.contact-margin {
+	margin-top: 45px;
+}
+
+.header-margin {
+	margin-top: 40px;
+}
+
+.image-margin {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.caption-margin {
+	margin-bottom: 10px;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+/*End of margins for mobile*/
+
+@media only screen and (min-width: 768px) {
+	#contact {
+		content: url("../images/contact.png");
+	}
+
+	.hero-margin {
+		margin-bottom: 50px;
+	}
+
+	.contact-margin {
+		margin-top: 70px;
+	}
+
+	.container {
+		max-width: 900px;
+	}
+
+	.header-margin {
+		margin-top: 40px;
+		margin-bottom: 15px;
+	}
+
+	.image-margin {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.caption-margin {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.bro {
+		position: absolute;
+		left: 50%;
+		top: 55%;
+		transform: translate(-50%, -55%);
+		color: #FF5A5A;
+	}
+
+}
+
+.red-box-container {
+	position: relative;
+}
+
+.red-box {
+	position: absolute;
+	height: 70px;
+	width: 200px;
+	background-color: #FF5A5A;
+	z-index: -1;
+	left: 80px;
+	top: -10px;
+}
+
+.bg-faint {
+	background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+
+a {
+	color: #FF5A5A;
+}
+
+a:hover {
+	color: #FF8F8F;
+}

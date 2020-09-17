@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108079640-3"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-108079640-3');
+		</script>
+		<title>Alexandra Palczewski</title>
+		<link rel="icon" href="images/a.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<link href="css/custom-pages.css" rel="stylesheet">
+		<link href="css/custom-cs3.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="custom.js"></script>
+	</head>
+
+	<body>
+
+		<div class="fixed-top">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="container-fluid bg-faint">
+					<div class="row">
+						<div class="col-md mt-4 ml-5 p-4">
+							<a href="index.html"><h5 class="text-dark h4">Alexandra Palczewski</h5></a>
+							<span class="text-muted">UX/UI/Graphic Designer</span>
+						</div>
+						<div class="col-md mt-4 ml-5 p-4">
+							<p>Menu</p>
+							<a href="index.html#about-me-link"><p>About Me</p></a>
+							<a href="index.html#case-studies-link"><p>Case Studies</p></a>
+							<a href="index.html#projects-link"><p>Projects</p></a>
+							<a href="index.html#contact-link"><p>Contact</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-light bg-transparent">
+				<button class="navbar-toggler" type="button" style="background-color: #FF5A5A;" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
+
+		<div id="hero" class="img-fluid hero-margin"></div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Redesigning Buttons and a Navigation Bar to Lessen Frustration</h1>
+			<p>While working to improve the user flow of an application, <b>I came across an overlooked need that would decrease the amount of unnecessary work for a user.</b> The buttons within the application appeared the same, regardless of action; both a cancel and a continue button were identical. This issue grew when a number of buttons were present, each with very specific actions. As many of the actions were highly specific, they were also described in a sentence, rather than in a few concise words.</p>
+			<p><b>Results gathered from a survey with a short test included stated that on average, a user would spend approximately 6.5 seconds before choosing the button necessary to complete the action in the test.</b> Hick's law states that the more stimuli users have to choose from, the longer it takes them to make a decision. <b>Users bombarded with choices have to take time to interpret and decide, giving them work they don't want.</b> Ideally, the choices presented to them should be short and simple to minimize the amount of work in the decision-making process.</p>
+			<p>However, sometimes there is no avoiding complexity. The objective of Hick's Law is to try and simplify the decision-making process, not eliminate that process entirely. <b>By using visual cues to make buttons with opposing actions stand out from one another, any necessary complexity could be kept while still shaving down the amount of time in a user's decision making process.</b></p>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Initial design issues</h1>
+			<ul>
+				<li>The application used many buttons, often with highly specific actions. This is not a design issue in and of itself, but <b>if a hierarchal system for categorizing these actions is not implemented, it could cause unnecessary frustration</b> and possible confusion for the user. Furthermore, <b>reducing the visual prominence of secondary actions minimizes the risk for potential errors,</b> and further directs users toward a successful outcome and there is a lowered risk of accidents in the user flow.</li>
+				<li>Buttons were also inconsistent in that <b>sometimes they used an entire sentence to describe their attached action.</b> If an action was complex, it should be further described in a label.</li>
+				<li><b>Button placement was not sensitive to user familiarity,</b> and did not follow best practices. For example, creative and destructive buttons were not consistently placed on the left or right.</li>
+				<li><b>There was too much of the same color being used throughout the application, making the call to actions stand out less.</b> Hyperlinks, buttons, logo and navigation bar were all the same hex code.</li>
+				<li>Buttons which were very long created inconsistent formatting in some areas.</li>
+			</ul>
+
+			<div class="image-margin">
+				<img src="images/cs3/1.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">While conducting a user survey, I asked users to choose a specific button and gathered data on how long it took them to make the correct choice. The buttons here are all the same visually, so I theorized that it would take longer for the user to make the correct choice.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/2.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Buttons in some areas were highly specific and sometimes described in an entire sentence. A button should be only a few short words, according to various guidelines such as Material Design, for example. This also caused the buttons to line up inconsistently.</p>
+			</div>
+
+			<ul>
+				<li>The navigation side menu featured a carrot would collapse the side menu. <b>The carrot was right in the middle of the page and was also often mistaken by users to be a back button.</b> There was also no visual cue which told users which sub-category they were on within the menu, which was very confusing as there were so many sub-categories! I often found myself clicking on the category that took me to the same page because I forgot where I was in the application.</li>
+			</ul>
+
+			<div class="image-margin">
+				<img src="images/cs3/3.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">A screen capture of the original menu. The carrot at the top, used to collapse the menu, could have been more visible. According to a previous user survey, results showed that the majority of users were unclear about the carrot's attached action and many thought it was a back button.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Research & Planning</h1>
+			<p>First, <b>I conducted some research on how other sites were implementing their button system and to better understand best practices.</b> Material design was also a very useful resource, which contained guidelines for creating a button hierarchy. Early on I recognized that sites with a clear user flow had a select few buttons that stood out; these were the options that those behind the website <b>most wanted their users to select.</b> After conducting research I brainstormed a list of what I needed to do next to combat the button issue in the application</p>
+
+			<ul>
+				<li><b>I needed to create a hierarchy.</b> Which actions were primary, and which were secondary? Which were destructive? Separating the essential material from the secondary, less-likely-to-be-selected options was vital in improving user flow.</li>
+				<li>I needed to design buttons for secondary and destructive actions, along with all their focus, clicked-on and disabled states. The creative button design would be the current button design, as filled in and dropshadowed buttons typically contain creative actions.</li>
+				<li><b>I needed to create guidelines</b> to categorize creative (primary), neutral (secondary) and destructive (tertiary) verbs to ensure that future created buttons would adhere to the same rules.</li>
+				<li><b>I needed to redesign the side menu so that it was evident to users where they were in the application,</b> in this way creating a kind of bread-crumb trail, and also redesign the carrot to make it more easily identifiable.</li>
+				<li>I needed to gather user testing and analyze their results, first and foremost, and make further decisions based upon these results.</li>
+			</ul>
+
+			<div class="image-margin">
+				<img src="images/cs3/4.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption"></p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/5.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">In both of the above images from my research, sites and applications with efficient user flow had buttons with a clear hierarchy; most of the time this was between the option they wanted users to choose most, followed by less desirable actions. This of course varied depending on the application or site; TD wants their users to get familiar with various online banking procedures, while Dropbox highlights the option of best value for their users.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">First designs</h1>
+			<p><b>I created a number of initial sketches and later digitized them all to get feedback from both developers and my UX lead.</b> My first few designs could not work because while talking to developers, I realized that the text button would look too similar to the already existing hyperlinks. It was also not possible for them to add a plus or x symbol to the buttons, pictured in the second design. <b>The third image, which was the design that made it through to testing, demonstrates the use of destructive action, neutral action, and creative action buttons.</b></p>
+
+			<div class="image-margin">
+				<img src="images/cs3/6.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">One of the initial designs. There was an issue with the text button not looking like a button until hovered upon.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/7.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">These buttons demonstrate the use of a + and X symbol on creative and destructive actions, which add another visual cue for users. This option however could not be implemented due to restraints in padding.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/8.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">This image features creative, neutral and destructive buttons within a modal window setting.</p>
+			</div>
+
+			<p><b>I also went through a series of design rounds for the navigation bar.</b> The primary questions I had to ask myself while designing were: how can the user know where they are on the site when the menu is both expanded and collapsed? And how can the expand/collapse button more clearly communicate its action?</p>
+			<p>The application also used a number of shades of grey, and the menu was the darkest shade. <b>To give it a more updated look and feel, and to make it pop on the page rather than blending in to it, I made it lighter.</b> I made use of my knowledge of light and shadow to help make the menu more noticeable and give it primacy. The menu already had a drop shadow, however it was hardly visible because the menu was the same shade as the shadow. The new white menu design also worked better with Descartes' blue which was used to highlight sub-categories in the menu, as the color was more clear and less muddy.</p>
+
+			<div class="image-margin">
+				<img src="images/cs3/9.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">In this mock I played with a variety of elements, such as an add/subtract button to communicate the collapsing/expanding of the menu, as well as a floating indicator on the collapsed menu to communicate to users where they were on the application without them having to expand the menu.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/10.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Another concept I played with for the carrot was a folded/unfolded corner, with the potential for an animation. This design did not make it as it would have taken too much time to implement.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/11.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">This is the final menu design which was chosen for implementation. The carrot design did not change besides its increase in size, however, placing it in a familiar area for the user makes quite a difference in communicating expected actions and utilizing user familiarity across other applications.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Testing</h1>
+			<p>To determine the effectiveness of my designs and to see if any more changes needed to be made, I needed to test them. <b>I developed a survey to asses the average amount of time users would spend deciding on a button as they currently existed within the application, and pit this against the amount of time they needed to find a button in a series of newly redesigned buttons.</b></p>
+			<p>After analyzing the user testing results, I discovered that within the user group of 50, <b>the average time it took to find the "create toast" button in the old design was 6.5. In the set of redesigned buttons, that time was cut down to 2 seconds.</b></p>
+			<p>I understood that a large part of this cut down on time was because the button the users were looking for was the option most visually obvious, so <b>I asked a question within the survey in which the users needed to find a neutral action, which was less obvious.</b> The time was still cut down, from 6 seconds to 3.</p>
+			<p>I also gathered feedback on the new navigation bar redesign, particularly from Oneface product managers. The majority of users, as well as the product owners, preferred the white menu redesign and justified their preference using words such as "simple" "easy to understand" and "clean".</p>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Final Design & guidelines</h1>
+			<p><b>I finalized the navigation bar and button redesign based upon survey results.</b> Creative actions would be represented in solid color buttons with a drop shadow, neutral actions would be represented in unfilled, outlined buttons, and destructive actions would be represented as underlined, light blue text. I made use of Descartes' chosen blue (but in a lower opacity) for hover and clicked states of neutral buttons.</p>
+
+			<div class="image-margin">
+				<img src="images/cs3/12.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The final button redesign, pictured above.</p>
+			</div>
+
+			<p>Next, after analyzing each button section within the application, <b>I developed a list which categorized all the verbs used within buttons so that any future buttons that were created could be easily categorized.</b> I also created specific rules within the documentation, such as that buttons must be described with an action (a button reading "all items" would be incorrect, as users are unsure of what the expected action of this button is).</p>
+
+			<div class="image-margin">
+				<img src="images/cs3/13.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Creating documentation and guidelines is vital in ensuring that any future changes will follow the same rules</p>
+			</div>
+
+			<p>I noticed that in some areas, icons were being used as illustrations (which again were the same shade of blue). I knew that <b>illustrations, when applied correctly, could positively influence the user's opinion of the application or brand they are interacting with.</b> Illustrations can add to a company's professional image, making them more likeable and personal to users. In the words of Shopify's Meg Robichaud "you have a greater willingness to try new things when you like them. You are more understanding when things go wrong if you like them". Adding illustrations to error pages, for example, could frustrate a user less because even though they have come across an error, they have found something pleasing (consider the dinosaur game that comes up when Google's browser is down—it's easy to forget about the issue in the first place!). <b>After seeing my shipping illustrations, my UX lead suggested that I also update the error pages, and perhaps animate the illustrations as well.</b> I thought this was a wonderful idea and developed some sketches and ideas, shown below. Though my internship ended before I could bring these ideas to implementation, the sketches gave the application's team some ideas of how they could update their error pages.</p>
+
+			<div class="image-margin">
+				<img src="images/cs3/14.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Icons were used in place of illustrations, and an overuse of the same blue was common within the application.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/15.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">I created some illustrations around icons to give the application a more modern look and feel.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs3/16.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Some brainstorming sketches for animated error pages. I thought it would be fun if a truck drove through the page and crashed into a building, with one of its tires bouncing off.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Lessons Learned</h1>
+			<p>This case study helped me to flex my observational muscles, as this issue was something I noticed while browsing through the application for bugs. It also <b>gave me more experience with the entire UX process, from ideation all the way to implementation.</b> Even though this project was not an entire design overhaul and dealt with a smaller portion of design, <b>I learned how much work may go into implementing these perceived small changes.</b> Even the smallest change needs to go through research and testing procedures! I also <b>became familiar with best practices when it came to developing a survey in a way that would garner the most helpful results, as well as how to ask questions that would garner productive answers from survey participants. Creating comprehensive guidelines</b> for developers also helped me learn more about their needs, and I learned how to develop a set of rules that would help make some of the decisions within their development process easier.</p>
+		</div>
+
+		<div id="contact-link" style="position: relative;">
+			<a href="mailto:apalczewski0@gmail.com" target="_blank"><svg width="24%" height="24%" viewBox="0 0 16 16" class="bi bi-mailbox bro" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+				<path fill-rule="evenodd" d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"/>
+				<path d="M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+			</svg></a>
+			<div id="contact" class="img-fluid contact-margin"></div>
+		</div>
+
+	</body>
+</html>

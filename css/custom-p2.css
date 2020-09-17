@@ -1,0 +1,24 @@
+#hero {
+	content: url("../images/p2/hero-mobile.png");
+}
+
+@media only screen and (min-width: 768px) {
+ 	#hero {
+		content: url("../images/p2/hero.png");
+ 	}
+}
+
+.text-theme {
+	background-color: #FF5A5A;
+	border-color: #FF5A5A;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: #FF8F8F !important;
+	border-color: #FF8F8F !important;
+	box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}

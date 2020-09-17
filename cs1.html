@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108079640-3"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-108079640-3');
+		</script>
+		<title>Alexandra Palczewski</title>
+		<link rel="icon" href="images/a.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<link href="css/custom-pages.css" rel="stylesheet">
+		<link href="css/custom-cs1.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="custom.js"></script>
+	</head>
+
+	<body>
+
+		<div class="fixed-top">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="container-fluid bg-faint">
+					<div class="row">
+						<div class="col-md mt-4 ml-5 p-4">
+							<a href="index.html"><h5 class="text-dark h4">Alexandra Palczewski</h5></a>
+							<span class="text-muted">UX/UI/Graphic Designer</span>
+						</div>
+						<div class="col-md mt-4 ml-5 p-4">
+							<p>Menu</p>
+							<a href="index.html#about-me-link"><p>About Me</p></a>
+							<a href="index.html#case-studies-link"><p>Case Studies</p></a>
+							<a href="index.html#projects-link"><p>Projects</p></a>
+							<a href="index.html#contact-link"><p>Contact</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-light bg-transparent">
+				<button class="navbar-toggler" type="button" style="background-color: #FF5A5A;" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
+
+		<div id="hero" class="img-fluid hero-margin"></div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Developing Visual Accessibility for a Logistics Application</h1>
+			<p>One SaaS I had worked on was a logistics application whose users ranged from fulfillment companies, goods providers and drivers. The application encompassed a wide variety of use cases and needed to be visually accessible for all users in all areas of the application, which was a particular challenge of this project. The application's team approached our UX team to tackle an issue they were facing: <b>their application was not color-blind accessible, and their use of color was confusing even to users who did not have a color sensitivity.</b> The application relied heavily on the use of color particularly for their routing and logistics management.</p>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Initial Design Issues</h1>
+			<p>We met with the application's team to jot down their initial comments and determine where the areas of most concern were. We discovered that:</p>
+
+			<ul>
+				<li><b>Some functions worked fine on their own but created visibility issues when utilized together.</b> For example, a selected card's default color was green, and a selected icon's color was blue. If both were selected, the icon was hardly visible.</li>
+				<li><b>The abundance of information, mostly reliant on color, could be confusing to their users.</b> A user who oversaw logistics management, for example, needed to see multiple routes at once, and the map utilized colors at random to represent different routes. This presented many issues; sometimes, routes were difficult to distinguish from one another because their colors were similar, or sometimes routes were the same colors as stops. This presented even more of an issue for those with color-blindness sensitivities.</li>
+				<li><b>The application did not meet <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a> guidelines, which meant that it was not accessible.</b> Users beyond those with a full color vision would not be able to use the application fully.</li>
+				<li><b>Some background colors were not compatible with text colors, making them very difficult to read and not accessible.</b></li>
+				<li>There was <b>not enough white space</b> to allow users to breathe and process information efficiently.</li>
+				<li><b>The team was also looking for a more modern redesign for their dashboard.</b></li>
+			</ul>
+
+			<div class="image-margin">
+				<img src="images/cs1/1.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">In the image above, when the target button was clicked on an already highlighted card, the target was almost impossible to see. It was also difficult to tell that the target icon (icon on the left within the cards) was even clickable!</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/2.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Above is a screenshot of the application's map, prior to redesign, with all routes and stops visible</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">The Redesign</h1>
+			<p>First, I needed a plan. The UX lead and I brainstormed together and determined that the best way to combat the various design issues was to divide the work into design iterations to focus on one issue at a time. As she already had multiple projects on her hands, we both agreed that it would be best for me to take on the majority of the redesign. During each iteration, we would meet with the team a few times to get their take on new designs, and to make any desired changes. The first step, however, was research. I needed to know about the different types of color blindness so I could learn how to best design for them. Taking a good amount of time to learn about how to develop visually accessible designs helped me to:</p>
+
+			<ul>
+				<li>Formulate an accessible color palette</li>
+				<li>Learn how to design with other visual methods as tools besides color, such as pattern and depth</li>
+				<li>Test my designs accurately using a variety of known color accessibility testing methods</li>
+				<li>Learn how to improve visual clarity of an application </li>
+				<li>Learn how to design for accessibility and design empathetically for users</li>
+			</ul>
+
+			<div class="image-margin">
+				<img src="images/cs1/3.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The UX lead and I planned out how we could tackle the redesign and divided the issues into iterations. We brainstormed a good amount of initial ideas and tossed them back and forth between ourselves to see if they would make for good solutions. This was a great way to combat the "blank canvas" dilemma, and to get any initial incompatible ideas out of the way.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">What the Research Said</h1>
+			<p>Taking a good amount of time to research helped me to understand the issues I could encounter early on when designing for color blindness accessibility, and it helped me to understand these difficulties more acutely. I learned that:</p>
+
+			<ul>
+				<li>Color blindness affects 8% of men and 0.5% of women. That means <b>that 1 out of every 20 users has a color deficiency;</b> quite a large number of users!</li>
+				<li>There are 3 types of color blindness: deuteranopia and protanopia both lack sensitivity to reds and greens, and tritanopia which is the most rare, and lacks sensitivity between blues, greens and violets.</li>
+				<li>These categories are further separated into sub-categories which determine severity. Mild cases of color deficiency can lead to mistakes identifying colors outside the usual spectrum, but severe cases can affect school and work performance, health, and safety issues.</li>
+				<li><b>It is truly impossible to design for all types of color blind users,</b> as their sensitivities to various colors overlap. However, there are some <b>key principles</b> to keep in mind to make a site more accessible for color blind users, no matter their sensitivity type, such as:</li>
+				<ul>
+					<li>Avoid only relying on color to convey a message</li>
+					<li>Keep color palettes limited to 2 or 3 colors</li>
+					<li>Use texture and patterns to show contrast</li>
+					<li>Carefully select any contrasting colors and shades</li>
+					<li>Avoid using bad color combinations, such as green and red, blue and purple, or blue and grey</li>
+				</ul>
+			</ul>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Design Iterations</h1>
+			<p>Each design iteration went through a cycle of prototyping, testing, and refining. During each iteration I would communicate with the application's team periodically to refine designs, gather feedback, and go through testing together, and at the end of each iteration I would meet with the application's team to finalize the iteration. I maintained regular communication with developers as well to clarify the application's existing design concepts and work together on determining the finer details of some components.</p>
+
+			<ul>
+				<li><b>Design iteration 1:</b> I needed to finalize an accessible color palette. The palette needed to ensure that information conveyed through color could be understood by users both with color disabilities and without. The palette would be used consistently throughout the application.</li>
+				<li><b>Design iteration 2:</b> The map should be redesigned to be clearer and have routes be more easily identifiable from one another. Visual data needed to be consistent so that users could navigate quickly and without being overwhelmed by trying to decipher information, particularly in the routes section.</li>
+				<li><b>Design iteration 3:</b> The way color was to be applied on cards needed to ensure that text and icons were also legible. In addition, certain icons needed to be redesigned to be more visible and have clearer actions. Visually, there was also a lack of hierarchy and priority in the way information was presented, and depth needed to be added to the workbench. The team also wanted a more modern look and feel for their dashboard.</li>
+			</ul>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Design Iteration 1: Choosing an Accessible Color Palette</h1>
+			<p>The first and perhaps most difficult task was to design an accessible color palette. Initially, the color palettes I considered did not pass the <b><a href="https://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Coblis</a> test,</b> a known method of testing for color blindness accessibility. However, <b>my knowledge of color theory came in handy for this project.</b> While conducting research on different types of color blindness, I recognized that what made some colors difficult to distinguish from others had to do with undertones. As evident in this screenshot, a blue with a yellow undertone and a blue with a red undertone can be difficult to distinguish from one another when it came to certain types of color blindness. These colors are both blue, and yet there is also more complexity to them. <b>I realized that I had to choose a palette that was within the same color family, or, one in which all colors shared a similar undertone.</b></p>
+
+			<div class="image-margin">
+				<img src="images/cs1/4.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">These two blues are distinguishable from one another to those without a color disability. However, if they were to be used together in a palette, they would be almost impossible to differentiate to both protanopia and deuteranopia color blind users. This may be because the blue on the left has a red undertone, and the blue on the right has a green undertone.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/5.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The application's team wanted to use bright colors, however, doing so presented issues with contrast. The green and orange circle is a lens demonstrating what the palette looks like to non color blind users, however the two (as well as the darker green color on the right) are almost indistinguishable to those with Protanopia.</p>
+			</div>
+
+			<p>One option the UX lead and I originally considered was to use varying shades of one color. However, this could not work if the number of routes exceeded the number of distinguishable shades (and in many cases they did). <b>The color palette needed to be more extensive, so that various shades of each color could be used if needed.</b></p>
+			<p>With some tweaking and after a lot of testing, I put together a palette that met all my criteria: all colors had similar undertones, would stand out from the map and stop colors, and be distinguishable enough to those with color sensitivities. Though it was not possible for me to test my design on a group of color blind users at the time, I did get the green/red light from a developer on the team with protanopia.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/6.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The image above shows the final palette. I designed this palette while trying to choose colors with a similar undertone.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/7.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The palette ended up passing in all areas of the Coblis test!</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Design Iteration 2: Redesigning the Map</h1>
+			<p>During this iteration, <b>I focused on ensuring the map and routing system would be accessible and clear.</b> Because the application had an already implemented map system that they wanted to continue to use, we could not use a variety of patterns to distinguish different routes from one another as research recommends. A route with a dashed line represented routes that had already been completed, and these could also be filtered out; therefore, the current pattern system was not an issue.</p>
+			<p>Through my research I learned that <b>pattern, contrast and depth should be relied upon <i>along with</i> color to convey visual information</b>. I implemented this knowledge into several areas of the redesign. For example, I decided to lower the map's color saturation while keeping the route colors bright.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/8.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The best way to represent lines on a map with color accessibility in mind is to utilize a combination of varying patterns, appropriate contrast, widths and labels so that users can decipher information without relying on a singular method. The color-blind friendly map of London's tube map, on the right, was designed by Ian Hamilton of 232 Studios.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/9.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The above image is what the map looked like prior to redesign. The route lines were about the same width as the lines representing the roads on the map. Route lines could also blend into one another if they were a similar color, and the "depot" icon was difficult to see.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/10.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">A redesigned route system featured wider, more vivid lines.</p>
+			</div>
+
+			<p>I also redesigned the stop and depot icons to make them more visible, as well as adding clarity to the application's already established stop icon system.</p>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Design Iteration 3: Giving the Application a New Look</h1>
+			<p><b>Next, I focused on redesigning cards, icons, and giving the application's dashboard a new look and feel.</b> I wanted to give the application a more minimal and modern look featuring the new color palette. Guidelines I had studied, such as Material Design, drew focus on a breathable, minimal UI so as to minimize information overwhelm. I recognized that the application was complex and had specialized features, and so it might greatly benefit from this.</p>
+			<p>First, I focused on implementing the paIette consistently throughout the dashboard and workbench. I recognized an issue early on; even with an optimized palette, selected cards in combination with certain icons would be difficult to see. After a brainstorming and research session in which I looked at email services, popular platforms, and other routing services, <b>I opted for having a colored side bar on each card, rather than having the whole card colored, which would ensure the legibility of the text.</b> Selected cards, rather than being colored, would have a drop shadow while unselected cards would not. I then changed the target logo to a star to make it more visible. <b>Changing the icon from a target to a star also helped in clarifying the expected action of the icon,</b> which was to keep a card pinned or favorited. I had considered using a pin icon, however, this icon was already in use in another area.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/11.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">During initial brainstorming, I was trying to figure out a way to indicate a selected card while also ensuring the button on the left would be visible, and the text within the cards legible.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/12.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The redesign featured elevated cards and a more visible and obvious button. I found that out of all of the options I considered and also showed to the application's team, this was the simplest and met all the criteria; the text and icons were visible, the selected card obvious, and there was no need to worry if the color of the card would affect visibility of the text.</p>
+			</div>
+
+			<p>Next, nearly 70% of the application's users had previously stated in a survey that they had difficulty recognizing which areas had primacy. At first, I had trouble coming up with a solution; using a drop shadow at the top of the drawer didn't look sleek or natural, and the application's team had also mentioned that they didn't want any information obscured. However, <b>I came across a rather elegant solution right in my OS;</b> Microsoft implements a semi-transparent acrylic UI element in certain areas, which allows for an appearance of a window having primacy while avoiding a bulky drop shadow.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/13.jpg" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Microsoft implements an acrylic semi-transparent texture to let users know that a window has primacy, regardless of the background it appears on.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/14.jpg" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">I implemented a similar acrylic effect to counter the issue with primacy.</p>
+			</div>
+
+			<p>I also looked through each section of the application to see where I could add more padding to give the application added whitespace. This would help in allowing users to more easily process information while also giving the application a more modern look and feel. Certain elements which were movable also did not have the appearance of being movable. I targeted this issue by giving these elements a card-like appearance with drop shadows.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/15.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Above is what the dashboard looked like prior to redesign.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/16.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Adding drop shadows and spacing out each card improved the look and feel, and also made it more obvious that they were cards.</p>
+			</div>
+
+			<p>Finally, I began to tackle the dashboard redesign. <b>Originally, the dashboard was not colorblind friendly and had an overlapping home icon which was difficult to see.</b> Users could also click incorrectly, resulting in accidentally making one page their "home". At first I did not stray too far from the original design, and only widened the lines of each icon to improve their visibility and implemented the new color palette. After meeting with the application's team however, they mentioned that they were interested in giving the dashboard icons a new look, and were willing to break further away from their old design. <b>My UX lead mentioned that it was a good idea to implement small changes first</b> and get comments from product managers, and then see if they wanted to go further in any aspects of the design. With the team's thumbs up, I got to work on some new icons in a more illustrative style as they had wanted. Rather than creating completely new ones however, <b>I designed environments around the existing icons which simultaneously kept the familiarity and consistency of the old icons while giving them a brand new look and feel.</b> The icons or the text underneath would lead users to the page, while the home icon below could be used to designate that page as a home for the user. I figured that keeping the home icon more separate from the other call to action areas would lead to fewer accidents in the user flow.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/17.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The original dashboard design was not color blind friendly and the icons were difficult to see.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/18.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">Increasing the weight of the icon lines as well as implementing a new color palette made the dashboard color-blind accessible and easier for all users to see. Testing the new user flow, which featured the home button in a separate area rather than over top of other CTAs, revealed that there were fewer accidents.</p>
+			</div>
+
+			<div class="image-margin">
+				<img src="images/cs1/19.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The final look of the application's dashboard featured a more illustrative style.</p>
+			</div>
+
+			<p><b>Other icons within the application were sometimes ambiguous,</b> making it difficult to interpret what they represented (some did not have labels to clarify them either). The difficulty with icons in the application was that the actions they represented were often unique and highly specific. <b>The image below demonstrates a few different options I designed for an action that needed an icon.</b> Some cards needed to notify users that they were assigned to a route, so I brainstormed some sketches and then digitized them to present to the application's team. The team decided to go with the icon in the second card.</p>
+
+			<div class="image-margin">
+				<img src="images/cs1/20.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The application's team chose to go with the second icon from the top, which would represent that a card was assigned to a route.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Testing</h1>
+			<p><b>Throughout each iteration, I tested my designs with a variety of known color-blind accessibility tests such as <a href="https://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Coblis</a> and also continually compared them to checkpoints under the <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a> guidelines.</b> I also conducted user testing for flow. I would also test my designs as I was developing them in Photoshop, by viewing a protanopia, deuteranopia, and grayscale version of the designs to ensure maximum legibility and color accessibility.</p>
+		</div>
+
+		<div class="container">
+			<h1 class="header-text header-margin">Lessons Learned</h1>
+			<p>This was my first redesign with a focus on color accessibility, so I learned a lot from this project. This project helped me understand how important it was to make visual clarity a priority from the beginning. Easily understandable icons, concise use of color, utilizing other visual cues besides color, and a breathable UI are all things that make it easier for users to utilize the application quickly and efficiently, and with minimal frustration from the moment they begin learning it. <b>It is often more difficult to implement a new design along the way even if it is more accessible and user friendly,</b> as users have already become familiar with the application as it exists. There were many ideas that came up early on in the project that unfortunately did not make it into the final product for this reason, and <b>I also had to learn to manage my own ideation</b> within what was within the realm of possibility and time constraints.</p>
+			<p>Throughout the project, <b>I had to balance various needs, including the accessibility needs of color-blind users, the desires and choices of the application's team, and the needs of the already implemented design.</b> The biggest question I had to answer was: how could I design accessibly while also giving the application a new look, and not straying too far from the original design? It was often tempting for me to want to design from scratch to see if I could improve systems, such as to implement a new routing system for example. However, I had to recognize that the application's already implemented system was what users were familiar with, and what the application wanted to keep; <b>designing a new system would mean that their end users would have to upheave what they already knew</b> and relearn the system. Even if this would mean more efficiency and less frustration for the users in the end, asking them to relearn the entire routing system would mean more frustration upfront, and was just not feasible for the application at the time. I also gained valuable experience in <b>learning how to defend my designs in front of stakeholders.</b> When presenting my color palette to the application's team, I was met with some pushback in that the colors were not varied enough. However, it would be almost impossible to have a very colorful palette and use it for the map and routing system, while still being accessible. <b>The key thing I learned here was when I could compromise on the requests of product owners and developers, and when I needed to push back to defend the usability of the application.</b></p>
+			<p><b>Accessibility needs to be built-in from the beginning.</b> Originally, the application did not address accessibility in their application and discovered that users suffered because of it. I learned a lot about accessibility guidelines and how to design with them in mind, and consider them from the very start of a project. <b>This has helped me to consider accessibility initially and has changed the way I design for the better.</b></p>
+
+			<div class="image-margin">
+				<img src="images/cs1/21.png" class="img-fluid">
+			</div>
+			<div class="caption-margin">
+				<p class="caption">The final iteration of the workbench.</p>
+			</div>
+		</div>
+
+		<div id="contact-link" style="position: relative;">
+			<a href="mailto:apalczewski0@gmail.com" target="_blank"><svg width="24%" height="24%" viewBox="0 0 16 16" class="bi bi-mailbox bro" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+				<path fill-rule="evenodd" d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"/>
+				<path d="M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+			</svg></a>
+			<div id="contact" class="img-fluid contact-margin"></div>
+		</div>
+
+	</body>
+</html>
