@@ -26,8 +26,23 @@
 	font-size: 40px;
 }
 
-h4 {
+h4, h5 {
 	font-family: 'Signika', sans-serif;
+}
+
+.test5 {
+	font-family: 'Signika', sans-serif;
+	font-size: 30px;
+}
+
+.test6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+.test7 {
+	font-family: 'Signika', sans-serif;
+	font-size: 18px;
 }
 
 p, li {

@@ -131,3 +131,18 @@ a {
 a:hover {
 	color: #FF8F8F;
 }
+
+.test5 {
+	font-family: 'Signika', sans-serif;
+	font-size: 30px;
+}
+
+.test6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+.test7 {
+	font-family: 'Signika', sans-serif;
+	font-size: 18px;
+}
